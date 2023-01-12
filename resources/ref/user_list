@@ -1,0 +1,303 @@
+<div class="card">
+    <div class="card-header">
+      <ul class="nav nav-tabs align-items-end card-header-tabs w-100">
+        <li class="nav-item">
+          <a class="nav-link active" href="http://wedeliver.cloud/users"><i class="fa fa-list mr-2"></i>Users List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="http://wedeliver.cloud/users/create"><i class="fa fa-plus mr-2"></i>Create User</a>
+        </li>
+        <div class="ml-auto d-inline-flex">
+    <li class="nav-item dropdown show">
+        <a class="nav-link  dropdown-toggle pt-1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-save"></i> Export
+        </a>
+        <div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;">
+            <a class="dropdown-item" id="exportCsvDatatable" href="#"> <i class="fa fa-file-excel-o mr-2"></i>CSV</a>
+            <a class="dropdown-item" id="exportExcelDatatable" href="#"> <i class="fa fa-file-excel-o mr-2"></i>Excel</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" id="exportPdfDatatable" href="#"> <i class="fa fa-file-pdf-o mr-2"></i>PDF</a>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link pt-1" id="refreshDatatable" href="#"><i class="fa fa-refresh"></i> Refresh</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link pt-1" id="printDatatable" href="#"><i class="fa fa-print"></i> Print</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link pt-1" id="resetDatatable" href="#"><i class="fa fa-undo"></i> Reset</a>
+    </li>
+    <li id="colVisDatatable" class="nav-item dropdown keepopen">
+        <a class="nav-link dropdown-toggle pt-1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-eye"></i> Columns
+        </a>
+        <div class="dropdown-menu">
+                            <a class="dropdown-item text-bold" href="#" data-column="0"> <i class="fa fa-check mr-2"></i>Avatar</a>
+                            <a class="dropdown-item text-bold" href="#" data-column="1"> <i class="fa fa-check mr-2"></i>Name</a>
+                            <a class="dropdown-item text-bold" href="#" data-column="2"> <i class="fa fa-check mr-2"></i>Email</a>
+                            <a class="dropdown-item text-bold" href="#" data-column="3"> <i class="fa fa-check mr-2"></i>Role</a>
+                            <a class="dropdown-item text-bold" href="#" data-column="4"> <i class="fa fa-check mr-2"></i>Updated At</a>
+                            <a class="dropdown-item text-bold" href="#" data-column="5"> <i class="fa fa-check mr-2"></i>Actions</a>
+                    </div>
+    </li>
+    
+    
+        
+            
+                
+                    
+                        
+                            
+                                    
+                                    
+                                    
+                                    
+                        
+                    
+                
+            
+        
+    
+        
+
+        
+            
+                
+                
+            
+        
+
+</div>
+
+      </ul>
+    </div>
+    <div class="card-body">
+      <div id="dataTableBuilder_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"><div id="" class="row"><div id="" class="col-lg-4 col-xs-12"><div class="dataTables_length" id="dataTableBuilder_length"><label>Afficher <select name="dataTableBuilder_length" aria-controls="dataTableBuilder" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> éléments</label></div></div><div id="" class="ml-auto"><div id="dataTableBuilder_filter" class="dataTables_filter"><div class="input-group input-group-sm">
+  <input type="text" value="" class="form-control" placeholder="Search" aria-label="Search">
+  <div class="input-group-append">
+    <span class="input-group-text"><i class="fa fa-search"></i></span>
+  </div>
+</div></div></div></div><div id="dataTableBuilder_processing" class="dataTables_processing card" style="display: none;">Traitement en cours...</div><table class="table dataTable no-footer dtr-inline" id="dataTableBuilder" width="100%" role="grid" aria-describedby="dataTableBuilder_info" style="width: 100%;"><thead><tr role="row"><th title="Avatar" class="sorting_desc" rowspan="1" colspan="1" data-column-index="0" style="width: 71px;" aria-label="Avatar">Avatar</th><th title="Name" class="sorting" tabindex="0" aria-controls="dataTableBuilder" rowspan="1" colspan="1" data-column-index="1" style="width: 193px;" aria-label="Name: activer pour trier la colonne par ordre croissant">Name</th><th title="Email" class="sorting" tabindex="0" aria-controls="dataTableBuilder" rowspan="1" colspan="1" data-column-index="2" style="width: 312px;" aria-label="Email: activer pour trier la colonne par ordre croissant">Email</th><th title="Role" class="sorting_disabled" rowspan="1" colspan="1" data-column-index="3" style="width: 91px;" aria-label="Role">Role</th><th title="Updated At" class="sorting" tabindex="0" aria-controls="dataTableBuilder" rowspan="1" colspan="1" data-column-index="4" style="width: 137px;" aria-label="Updated At: activer pour trier la colonne par ordre croissant">Updated At</th><th title="Actions" width="80px" class="sorting_disabled" rowspan="1" colspan="1" data-column-index="5" style="width: 112px;" aria-label="Actions">Actions</th></tr></thead><tbody><tr role="row" class="odd"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/storage/app/public/249/conversions/25292_1352932436819_4523900_n-icon.jpg" alt="25292_1352932436819_4523900_n"></td><td>Daryl Varghese admin</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:admin@demo.com"><i class="fa fa-envelope mr-1"></i>admin@demo.com</a></td><td><span class="">admin</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Sunday 18th December 2022 (20:07:47)">il y a 2 semaines</p></td><td><form method="POST" action="http://wedeliver.cloud/users/1" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/1/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/1"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="even"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/images/image_default.png" alt="image_default"></td><td>Manager guy</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:manager@demo.com"><i class="fa fa-envelope mr-1"></i>manager@demo.com</a></td><td><span class="">manager</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Wednesday 25th September 2019 (19:09:35)">il y a 3 ans</p></td><td><form method="POST" action="http://wedeliver.cloud/users/2" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/2/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/2"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="odd"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/images/image_default.png" alt="image_default"></td><td>Daryl varghese</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:client@demo.com"><i class="fa fa-envelope mr-1"></i>client@demo.com</a></td><td><span class="">client</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Sunday 25th October 2020 (11:15:07)">il y a 2 ans</p></td><td><form method="POST" action="http://wedeliver.cloud/users/3" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/3/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/3"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="even"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/storage/app/public/245/conversions/oauth_idphoto_ff8080816bf4ca8e016bf4ddea780000-icon.jpg" alt="oauth_idphoto_ff8080816bf4ca8e016bf4ddea780000.jpg"></td><td>Idil Abdi Dousieh</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:idil.abdi@nomadecom.com"><i class="fa fa-envelope mr-1"></i>idil.abdi@nomadecom.com</a></td><td><span class="">driver</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tuesday 1st June 2021 (16:09:43)">il y a 1 an</p></td><td><form method="POST" action="http://wedeliver.cloud/users/25" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/25/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/25"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="odd"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/images/image_default.png" alt="image_default"></td><td>Sanchez Roberto</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:driver@demo.com"><i class="fa fa-envelope mr-1"></i>driver@demo.com</a></td><td><span class="">driver</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Sunday 29th March 2020 (14:22:10)">il y a 2 ans</p></td><td><form method="POST" action="http://wedeliver.cloud/users/5" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/5/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/5"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="even"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/images/image_default.png" alt="image_default"></td><td>John Doe</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:driver1@demo.com"><i class="fa fa-envelope mr-1"></i>driver1@demo.com</a></td><td><span class="">driver</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Sunday 29th March 2020 (14:28:04)">il y a 2 ans</p></td><td><form method="POST" action="http://wedeliver.cloud/users/6" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/6/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/6"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="odd"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/images/image_default.png" alt="image_default"></td><td>testclient</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:codetilludie@gmail.com"><i class="fa fa-envelope mr-1"></i>codetilludie@gmail.com</a></td><td><span class="">client</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Monday 26th October 2020 (08:30:51)">il y a 2 ans</p></td><td><form method="POST" action="http://wedeliver.cloud/users/8" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/8/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/8"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="even"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/images/image_default.png" alt="image_default"></td><td>daryl</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:interestingpal@gmail.com"><i class="fa fa-envelope mr-1"></i>interestingpal@gmail.com</a></td><td><span class="">client</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Thursday 22nd October 2020 (15:00:00)">il y a 2 ans</p></td><td><form method="POST" action="http://wedeliver.cloud/users/7" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/7/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/7"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="odd"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/storage/app/public/247/conversions/oauth_idphoto_ff808081681374eb01686f21bda80009-icon.jpg" alt="oauth_idphoto_ff808081681374eb01686f21bda80009.jpg"></td><td>Kadra Abdi Douksieh</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:25377831817@mdjf"><i class="fa fa-envelope mr-1"></i>25377831817@mdjf</a></td><td><span class="">client</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Sunday 21st February 2021 (17:59:51)">il y a 1 an</p></td><td><form method="POST" action="http://wedeliver.cloud/users/26" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/26/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/26"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr><tr role="row" class="even"><td class="sorting_1" tabindex="0"><img class="img-circle elevation-2" style="width:50px" src="http://wedeliver.cloud/storage/app/public/243/conversions/oauth_idphoto_ff8080817637b862017638c013d80000-icon.jpg" alt="oauth_idphoto_ff8080817637b862017638c013d80000.jpg"></td><td>Ibrahim Hassan Adan</td><td><a class="btn btn-outline-secondary btn-sm" href="mailto:ibrahim.hassan.adan19@gmail.com"><i class="fa fa-envelope mr-1"></i>ibrahim.hassan.adan19@gmail.com</a></td><td><span class="">client</span></td><td><p data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Sunday 30th May 2021 (04:27:50)">il y a 1 an</p></td><td><form method="POST" action="http://wedeliver.cloud/users/24" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="2T6w79KmkQ1liltPoEPzizHIamyG2Ejl9oMCH8y4">
+<div class="btn-group btn-group-sm">
+    
+        
+    <a data-toggle="tooltip" data-placement="bottom" title="" href="http://wedeliver.cloud/users/24/edit" class="btn btn-link" data-original-title="Edit User">
+        <i class="fa fa-edit"></i> </a>
+    <button data-toggle="tooltip" data-placement="bottom" title="" type="submit" class="btn btn-link text-danger" onclick="swal({title: Error, confirmButtonText: OK,
+                            text: data.message,type: 'error', confirmButtonClass: 'btn-danger'});" data-original-title="Delete"><i class="fa fa-trash"></i></button>
+
+    <div class="dropdown">
+        <a class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i> </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://wedeliver.cloud/settings/users/login-as-user/24"> <i class="fa fa-sign-in mr-1"></i> Login as this user
+            </a>
+
+            <a onclick="return swal({title: 'Error'});" class="dropdown-item" href="http://wedeliver.cloud/users/profile"><i class="fa fa-user mr-1"></i> Profile </a>
+
+        </div>
+    </div>
+
+</div>
+</form></td></tr></tbody></table><div class="dataTables_info" id="dataTableBuilder_info" role="status" aria-live="polite">Affichage de l'élément 1 à 10 sur 14 éléments</div><div class="dataTables_paginate paging_simple_numbers" id="dataTableBuilder_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="dataTableBuilder_previous"><a href="#" aria-controls="dataTableBuilder" data-dt-idx="0" tabindex="0" class="page-link">Précédent</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="dataTableBuilder" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTableBuilder" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item next" id="dataTableBuilder_next"><a href="#" aria-controls="dataTableBuilder" data-dt-idx="3" tabindex="0" class="page-link">Suivant</a></li></ul></div></div>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>

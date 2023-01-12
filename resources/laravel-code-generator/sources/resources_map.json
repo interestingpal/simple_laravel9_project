@@ -1,0 +1,17 @@
+[
+    {
+        "model-name": "job_statuses",
+        "resource-file": "job_statuses.json",
+        "table-name": "job_statuses"
+    },
+    {
+        "model-name": "jobs",
+        "resource-file": "jobs.json",
+        "table-name": "jobs"
+    },
+    {
+        "model-name": "users",
+        "resource-file": "users.json",
+        "table-name": "users"
+    }
+]
